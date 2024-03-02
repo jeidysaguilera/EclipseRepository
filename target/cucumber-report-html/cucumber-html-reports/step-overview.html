@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="step-overview.html">Steps</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>CucumberJavaProyect</td>
+                          <td>1</td>
+                        <td>02 mar 2024, 10:50</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Steps Statistics</h2>
+              <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+              <table id="tablesorter" class="stats-table table-hover">
+
+          <thead>
+            <tr class="header">
+              <th>Implementation</th>
+              <th>Occurrences</th>
+              <th>Duration</th>
+              <th>Average</th>
+              <th>Ratio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+                          <tr>
+                <td class="location">StepsDefinitions.BackgroundSteps.al_dar_clic_en_el_link_dashboard()</td>
+                <td>1</td>
+                <td class="duration" data-value="743770">000ms</td>
+                <td class="duration" data-value="743770">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepsDefinitions.BackgroundSteps.chequea_que_el_link_logout_esta_disponible()</td>
+                <td>1</td>
+                <td class="duration" data-value="151471">000ms</td>
+                <td class="duration" data-value="151471">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepsDefinitions.BackgroundSteps.clic_en_login()</td>
+                <td>2</td>
+                <td class="duration" data-value="261820">000ms</td>
+                <td class="duration" data-value="130910">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepsDefinitions.BackgroundSteps.da_clic_en_el_apartado_bob_tester()</td>
+                <td>1</td>
+                <td class="duration" data-value="130963">000ms</td>
+                <td class="duration" data-value="130963">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepsDefinitions.BackgroundSteps.el_usuario_esta_en_la_pagina_de_login()</td>
+                <td>2</td>
+                <td class="duration" data-value="1245082">001ms</td>
+                <td class="duration" data-value="622541">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepsDefinitions.BackgroundSteps.el_usuario_se_encuentra_en_la_pagina_principal()</td>
+                <td>2</td>
+                <td class="duration" data-value="1297248">001ms</td>
+                <td class="duration" data-value="648624">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepsDefinitions.BackgroundSteps.entra_a_la_pagina_principal()</td>
+                <td>2</td>
+                <td class="duration" data-value="350076">000ms</td>
+                <td class="duration" data-value="175038">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepsDefinitions.BackgroundSteps.inserta_username_y_password_correctamente()</td>
+                <td>2</td>
+                <td class="duration" data-value="390689">000ms</td>
+                <td class="duration" data-value="195344">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepsDefinitions.BackgroundSteps.verifica_que_se_encuientra_en_el_apartado_con_el_texto_dashboard()</td>
+                <td>1</td>
+                <td class="duration" data-value="572930">000ms</td>
+                <td class="duration" data-value="572930">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepsDefinitions.GoogleSteps.escribo_la_informacion_a_buscar(java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="235726314">235ms</td>
+                <td class="duration" data-value="235726314">235ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepsDefinitions.GoogleSteps.estoy_en_la_pagina_de_seccion_de_busqueda_en_google()</td>
+                <td>1</td>
+                <td class="duration" data-value="2300588016">2s 300ms</td>
+                <td class="duration" data-value="2300588016">2s 300ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepsDefinitions.GoogleSteps.obtengo_informacion_de_la_pagina()</td>
+                <td>1</td>
+                <td class="duration" data-value="1569661651">1s 569ms</td>
+                <td class="duration" data-value="1569661651">1s 569ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepsDefinitions.GoogleSteps.presiono_enter()</td>
+                <td>1</td>
+                <td class="duration" data-value="290387874">290ms</td>
+                <td class="duration" data-value="290387874">290ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepsDefinitions.LoginDemoSteps.browser_esta_abierto()</td>
+                <td>5</td>
+                <td class="duration" data-value="5067584037">5s 067ms</td>
+                <td class="duration" data-value="1013516807">1s 013ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepsDefinitions.LoginDemoSteps.browser_esta_cerrado()</td>
+                <td>5</td>
+                <td class="duration" data-value="457073872">457ms</td>
+                <td class="duration" data-value="91414774">091ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepsDefinitions.LoginDemoSteps.el_usuario_entra_a_la_pagina_principal()</td>
+                <td>2</td>
+                <td class="duration" data-value="95449488">095ms</td>
+                <td class="duration" data-value="47724744">047ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepsDefinitions.LoginDemoSteps.el_usuario_entra_su_usuario_y_contraseña_correctamente(java.lang.String,java.lang.String)</td>
+                <td>2</td>
+                <td class="duration" data-value="467120092">467ms</td>
+                <td class="duration" data-value="233560046">233ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepsDefinitions.LoginDemoSteps.se_abre_la_pantalla_de_loguearse()</td>
+                <td>2</td>
+                <td class="duration" data-value="8366896829">8s 366ms</td>
+                <td class="duration" data-value="4183448414">4s 183ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepsDefinitions.LoginDemoSteps.se_autentica_al_dar_clic_en_login()</td>
+                <td>2</td>
+                <td class="duration" data-value="1378907719">1s 378ms</td>
+                <td class="duration" data-value="689453859">689ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                      </tbody>
+
+          <tfoot class="total">
+            <tr>
+              <td>19</td>
+              <td>36</td>
+              <td class="duration">20s 234ms</td>
+              <td class="duration">562ms</td>
+              <td>Totals</td>
+            </tr>
+          </tfoot>
+
+        </table>
+          </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
